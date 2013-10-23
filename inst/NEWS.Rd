@@ -2,20 +2,15 @@
 \title{Minfi News}
 \encoding{UTF-8}
 
-\section{Version 1.9}{
-  \itemize{
-    \item Importing the changes from 1.8 into 1.9.
-  }
-}
-
 \section{Version 1.8}{
   \itemize{
     \item preprocessQuantile(object) would fail if object was a
     GenomicMethylSet.  This is now fixed.
     \item Cleanup of Rd markdown in various help files.
+    \item estimateCellCounts would throw an error.  This is now fixed.
+    The function arguments have changed.
   }
 }
-
 
 \section{Version 1.7}{
   \itemize{
