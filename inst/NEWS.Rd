@@ -9,6 +9,12 @@
     \item Cleanup of Rd markdown in various help files.
     \item estimateCellCounts would throw an error.  This is now fixed.
     The function arguments have changed.
+    \item Bug in cpgCollapse led to incorrect results. Your output is
+    affected if table(granges(output[[1]])$type) is all 'OpenSea'.
+    Reported by Florence Cavalli <florence@ebi.ac.uk>.
+    \item Bug in cpgCollapse led to incorrect results. Your output is
+    affected if table(granges(output[[1]])$type) is all 'OpenSea'.
+    Reported by Florence Cavalli <florence@ebi.ac.uk>.
   }
 }
 
