@@ -12,9 +12,6 @@
     \item Bug in cpgCollapse led to incorrect results. Your output is
     affected if table(granges(output[[1]])$type) is all 'OpenSea'.
     Reported by Florence Cavalli <florence@ebi.ac.uk>.
-    \item Bug in cpgCollapse led to incorrect results. Your output is
-    affected if table(granges(output[[1]])$type) is all 'OpenSea'.
-    Reported by Florence Cavalli <florence@ebi.ac.uk>.
     \item Encapsulated the example for estimateCellCounts() in 'dontrun',
     to disable it on the build servers.
     \item preprocessQuantile would work as if removeBadSamples=TRUE no
@@ -22,6 +19,12 @@
     \item Fixing replace bug in fixMethOutliers; it would not work on
     the output of preprocessSWAN.  Reported by David McGaughey
     <david.mcgaughey@nih.gov> 
+    \item The function mapToGenome would return something that looked
+    like an unordered GenomicMethylSet.  Actually, loci were correctly
+    ordered within chromosomes, the issue had to do with whether the
+    chromosomes were ordered as chr1, chr2, chr3 (used in minfi) or chr1,
+    chr10, chr11 (lexigraphically).  Reported by Florence Cavalli
+    <florence@ebi.ac.uk>.
   }
 }
 
