@@ -1,9 +1,14 @@
 Package: minfi
-Version: 1.8.8
+Version: 1.8.9
 Title: Analyze Illumina's 450k methylation arrays
 Description: Tools for analyzing and visualizing Illumina's 450k array data
-Author: Kasper Daniel Hansen, Martin Aryee
-Maintainer: Kasper Daniel Hansen <khansen@jhsph.edu>
+Authors@R: c(person(c("Kasper", "Daniel"), "Hansen", role = c("cre", "aut"),
+                    email = "khansen@jhsph.edu"),
+             person("Martin", "Ayree", role = "aut"),
+             person(c("Rafael", "A."), "Irizarry", role = "aut"),
+	     person(c("Andrew", "E."), "Jaffe", role = "ctb"),
+	     person("Jovana", "Maksimovic", role = "ctb"),
+             person(c("E.", "Andres"), "Houseman", role = "ctb"))
 Depends:  methods,
 	  BiocGenerics (>= 0.3.2),
 	  Biobase (>= 2.17.8),
