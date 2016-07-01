@@ -2,6 +2,13 @@
 \title{Minfi News}
 \encoding{UTF-8}
 
+\section{Version 1.18}{
+  \itemize{
+    \item Backported fix from devel; we now support reading multiple
+    types of EPIC IDAT files, see argument force in read.metharray.
+  }
+}
+    
 \section{Version 1.15}{
   \itemize{
     \item Adding testing for preprocessNoob, preprocessFunnorm.
