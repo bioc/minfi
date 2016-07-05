@@ -6,6 +6,11 @@
   \itemize{
     \item Backported fix from devel; we now support reading multiple
     types of EPIC IDAT files, see argument force in read.metharray.
+    \item Backported fix from devel; Addressing a bug in
+    preprocessQuantile which led to reduced
+    performance for Type I probes when run with default paramters
+    (stratified=TRUE).  Users are strongly encouraged to update to the
+    latest version (1.19.7 or greater) and rerun the function.
   }
 }
     
