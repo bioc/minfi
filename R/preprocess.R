@@ -1,5 +1,5 @@
 preprocessRaw <- function(rgSet) {
-    .isRGOrStop(rgSet)
+    .isRG(rgSet)
     locusNames <- getManifestInfo(rgSet, "locusNames")
     M <- matrix(NA_real_, ncol = ncol(rgSet), nrow = length(locusNames),
                 dimnames = list(locusNames, sampleNames(rgSet)))
@@ -55,7 +55,7 @@ normalize.illumina.control <- function(rgSet, reference=1) {
 }
 
 bgcorrect.illumina <- function(rgSet) {
-    .isRGOrStop(rgSet)
+    .isRG(rgSet)
     Green <- getGreen(rgSet)
     Red <- getRed(rgSet)
     if (.is450k(rgSet) || .isEPIC(rgSet)) {
@@ -76,7 +76,7 @@ bgcorrect.illumina <- function(rgSet) {
 
 preprocessIllumina <- function(rgSet, bg.correct = TRUE, normalize = c("controls", "no"),
                                 reference = 1) {
-    .isRGOrStop(rgSet)
+    .isRG(rgSet)
     normalize <- match.arg(normalize)
 
     if(normalize == "controls") {
@@ -100,7 +100,7 @@ preprocessIllumina <- function(rgSet, bg.correct = TRUE, normalize = c("controls
 
 
 detectionP <- function(rgSet, type = "m+u") {
-    .isRGOrStop(rgSet)
+    .isRG(rgSet)
     locusNames <- getManifestInfo(rgSet, "locusNames")
     detP <- matrix(NA_real_, ncol = ncol(rgSet), nrow = length(locusNames),
                    dimnames = list(locusNames, sampleNames(rgSet)))
