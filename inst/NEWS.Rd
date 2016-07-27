@@ -11,6 +11,13 @@
     performance for Type I probes when run with default paramters
     (stratified=TRUE).  Users are strongly encouraged to update to the
     latest version (1.19.7 or greater) and rerun the function.
+    \item Backported fix for detectionP in devel; this function now
+    works on a single sample.
+    \item Backported fix from devel: Fixed a bug in read.metharray where
+    we assumed a certain ordering is consistent in IDAT files from
+    different samples. This is no longer assumed, but as a consequence the
+    function is a bit slower. Bug (indirectly) observed by Giovanni Calice
+    <giovcalice@gmail.com>. 
   }
 }
     
