@@ -2,6 +2,16 @@
 \title{Minfi News}
 \encoding{UTF-8}
 
+\section{Version 1.20}{
+  \itemize{
+    \item Backported this bugfix from devel: Reverted the bugfix to
+    preprocessQuantile mentioned under news for version 1.19. Our fix
+    was wrong; the original code did not have a bug. Thanks to users who
+    reported issues with the function (Frederic Fournier and David
+    Martino). 
+  }
+}
+
 \section{Version 1.19}{
   \itemize{
     \item preprocessNoob gets a dyeMethod argument which now allows for
