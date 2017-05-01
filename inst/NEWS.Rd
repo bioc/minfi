@@ -4,6 +4,21 @@
 
 \section{Version 1.21}{
   \itemize{
+    \item Backporting following change from 1.23: Fixed as() (coercion)
+    from RGChannelSetExtended to RGChannelSet, to support the argument
+    extended=TRUE in read.matharray(). The core issue is the
+    new("RChannelSetExtended") is an invalid object because it does not
+    have correct elements of the assay slot.  Instead of addressing
+    this, I used a check for ncol=0, nrow=0 in the coercion function
+    which asssumes the presence of correctly named assays. Original
+    issue report by Stewart Morris <swmorris@exseed.ed.ac.uk>.
+    \item Backporting following change from 1.23: Improved (made
+    prettier) the printing of messages in read.metharray() and friends.
+  }
+}
+
+\section{Version 1.21}{
+  \itemize{
     \item Moving RGChannelSet, MethylSet and RatioSet from building on
     eSet (from Biobase) to SummarizedExperiment (from
     SummarizedExperiment). Most important changes are that the
