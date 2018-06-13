@@ -5,6 +5,9 @@
 \section{Version 1.26}{
   \subsection{Bug fixes}{
     \itemize{
+      \item {v1.26.2} Fix bug in \code{preprocessQuantile()} that arose when
+        checking input for previous preprocessing method. Thanks to @DelnazR for
+        the report (\url{https://github.com/hansenlab/minfi/issues/165}).
       \item \code{v1.26.1}: \code{dmpFinder()} again works when \code{dat} is
         a numeric matrix. This bug was introduced in \code{v1.26.0} during the
         transition to support DelayedArray-backed minfi objects. Thanks to
