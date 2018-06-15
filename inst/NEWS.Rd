@@ -2,6 +2,15 @@
 \title{Minfi News}
 \encoding{UTF-8}
 
+\section{Version 1.26}{
+  \itemize{
+    \item Fixed bug related to switch A and B for SNPs of type
+    I when using convertArray / combineArrays.  Reported by Jenny van
+    Dongen.
+    \item Fixed error in dmpFinder.
+  }
+}
+
 \section{Version 1.25}{
   \itemize{
     \item Added preliminary support for DelayedArray-backed minfi objects. This
