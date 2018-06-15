@@ -3,11 +3,16 @@
 \encoding{UTF-8}
 
 \section{Version 1.26}{
-  \itemize{
+    \item Fix bug in \code{preprocessQuantile()} that arose when
+    checking input for previous preprocessing method. Thanks to @DelnazR for
+    the report (\url{https://github.com/hansenlab/minfi/issues/165}).
+    \item \code{dmpFinder()} again works when \code{dat} is
+    a numeric matrix. This bug was introduced in \code{v1.26.0} during the
+    transition to support DelayedArray-backed minfi objects. Thanks to
+    @ralowe for the report (#163).
     \item Fixed bug related to switch A and B for SNPs of type
-    I when using convertArray / combineArrays.  Reported by Jenny van
-    Dongen.
-    \item Fixed error in dmpFinder.
+    I when using \code{convertArray} / \code{combineArrays}.  Reported
+    by Jenny van Dongen.
   }
 }
 
