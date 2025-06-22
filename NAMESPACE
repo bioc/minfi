@@ -6,8 +6,8 @@ importMethodsFrom(Biobase, exprs, fData,
                   pData, "pData<-",
                   sampleNames, "sampleNames<-")
 import(Biostrings, except = c(type))
-importMethodsFrom(GenomeInfoDb, seqlevels, "seqlevels<-", genome, "genome<-", seqlengths, "seqlengths<-")
-importClassesFrom(GenomeInfoDb, Seqinfo)
+importMethodsFrom(Seqinfo, seqlevels, "seqlevels<-", genome, "genome<-", seqlengths, "seqlengths<-")
+importClassesFrom(Seqinfo, Seqinfo)
 import(GenomicRanges)
 import(SummarizedExperiment)
 import(S4Vectors)
