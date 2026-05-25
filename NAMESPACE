@@ -29,7 +29,7 @@ importFrom(limma, squeezeVar, lmFit, eBayes, contrasts.fit, normexp.signal)
 importFrom(preprocessCore, normalize.quantiles, normalize.quantiles.use.target)
 importFrom(illuminaio, readIDAT)
 importFrom(genefilter, rowFtests, rowttests)
-importFrom(utils, packageVersion, read.csv, read.table, data)
+importFrom(utils, packageVersion, read.csv, read.table)
 importFrom(bumphunter, bumphunter, bumphunterEngine, locfitByCluster,
            clusterMaker, boundedClusterMaker)
 importMethodsFrom(bumphunter, bumphunter)
